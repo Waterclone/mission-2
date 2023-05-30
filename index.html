@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gxr1roi.css" />
+    <script defer src="script.js"></script>
+    <title>The Animal Quiz</title>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <h1 id="welcome">The Animal Quiz</h1>
+      </div>
+      <div>
+        <h2 id="blurb">
+          Test your knowledge. See if you can answer all three questions
+          correctly!
+        </h2>
+      </div>
+      <div id="pic-and-splash">
+        <div>
+          <div id="change-img"><img id="img" src="images/splash.jpg" /></div>
+        </div>
+        <div>
+          <div id="final">Jumpin</div>
+        </div>
+        <div>
+          <div id="get-started">GET STARTED!</div>
+        </div>
+      </div>
+      <div>
+        <h2 id="welldone">WELL DONE!</h2>
+      </div>
+    </header>
+    <content id="content">
+      <div id="question">
+        <div id="qScript">Script here</div>
+      </div>
+      <div id="answer">
+        <div id="answer-line-1">
+          <div id="opt1" onclick="answerReveal()">OPTION 1</div>
+          <div id="opt2" onclick="answerReveal()">OPTION 2</div>
+        </div>
+        <div id="answer-line-2">
+          <div id="opt3" onclick="answerReveal()">OPTION 3</div>
+          <div id="opt4" onclick="answerReveal()">OPTION 4</div>
+        </div>
+        <div>
+          <div id="next-question">Next Question</div>
+        </div>
+        <div>
+          <p id="your-score">Your Score</p>
+        </div>
+      </div>
+    </content>
+  </body>
+</html>
