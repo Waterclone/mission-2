@@ -31,10 +31,11 @@ function question1() {
   opt3.textContent = qArray[0].opt3;
   opt4.textContent = qArray[0].opt4;
 
-  opt1.addEventListener("click", function () {
-    score++;
-    console.log(score);
-  });
+  opt1.addEventListener("click", opt1Clicked);
+}
+
+function opt1Clicked() {
+  score++;
 }
 
 function answerReveal() {
@@ -75,6 +76,7 @@ function nextQuestion1() {
 }
 
 function question2() {
+  opt1.removeEventListener("click", opt1Clicked);
   document.getElementById("img").src = "images/pic2.jpg";
   opt1.style.background = "white";
   opt2.style.background = "white";
@@ -88,10 +90,11 @@ function question2() {
   opt3.textContent = qArray[1].opt3;
   opt4.textContent = qArray[1].opt4;
 
-  opt2.addEventListener("click", function () {
-    score++;
-    console.log(score);
-  });
+  opt2.addEventListener("click", opt2Clicked);
+}
+
+function opt2Clicked() {
+  score++;
 }
 
 function nextQuestion2() {
@@ -100,6 +103,7 @@ function nextQuestion2() {
 }
 
 function question3() {
+  opt2.removeEventListener("click", opt2Clicked);
   document.getElementById("img").src = "images/pic3.jpg";
   qScript.textContent = qArray[2].question;
   opt1.textContent = qArray[2].opt1;
@@ -107,10 +111,11 @@ function question3() {
   opt3.textContent = qArray[2].opt3;
   opt4.textContent = qArray[2].opt4;
 
-  opt4.addEventListener("click", function () {
-    score++;
-    console.log(score);
-  });
+  opt4.addEventListener("click", opt4Clicked);
+}
+
+function opt4Clicked() {
+  score++;
 }
 
 function yourScore() {
